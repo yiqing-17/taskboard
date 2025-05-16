@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
 export default function TaskDetail({ params }) {
@@ -30,7 +30,7 @@ export default function TaskDetail({ params }) {
     return (
         <main className="p-4 max-w-md mx-auto">
             <h1 className="text-2xl font-bold mb-4">
-                Task Detail
+                Task Details
             </h1>
             <input
                 className="border p-2 w-full mb-2"

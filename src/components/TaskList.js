@@ -12,13 +12,13 @@ export default function TaskList({tasks, onDelete}){
                 >
                     <Link 
                       href={`/task/${task.id}`}
-                      className="text-blue-500 hover:underline"
+                      className="text-blue-600 hover:underline"
                     >
                       {task.title}
                     </Link>
                     <button 
                       className="text-red-500"
-                      onClick={() => onDelete(index)}
+                      onClick={() => onDelete(task.id)}
                       >
                       Delete
                     </button>
